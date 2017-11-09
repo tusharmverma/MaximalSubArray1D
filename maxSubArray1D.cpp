@@ -80,3 +80,19 @@ void MaxSumSubArray2D( int **a, int rows, int columns)
     cout << "\nMax Sum (Bottom,right) : (" << MaxSumBottom << " , " << MaxSumRight << ")" << endl;
 }
 
+int main() {
+    int size;
+    cout << "Calculating the Maximum Sub Array of 1D Array !" << endl;
+    cout << "Input the Size of 1-D Array: ";
+    cin >> size;
+    int arr[size];
+    for(int i = 0; i < size;i++){
+        cout << "Enter the " << i+1 << " Element in Array: ";
+        cin >> arr[i];
+    }
+    MaxSumSubArray(arr,size);
+    cout << endl;
+    
+    return 0;
+}
+
